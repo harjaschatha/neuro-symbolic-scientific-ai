@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "title": "Neuro-Symbolic Scientific Model Selection \u2014 Synthetic Case Study",
+    "project": "MSc Research Project",
+    "data_governance_notice": "Synthetically generated microbial growth trajectory. Contains zero proprietary or non-public experimental data.",
+    "provenance": {
+      "run_id": "DEMO-RUN-2026-09-SYNTH-01",
+      "timestamp_utc": "2026-09-25T17:39:56.668674+00:00",
+      "input_data_hash": "a2c7a2bd9e4fd41de3c37a894a602f0caea38ba25b2a82bf475443e8b17ff26b",
+      "ode_fits_hash": "59ebafe42d7a9f7fe2317359a258c78935436e6e74c1cc73ab4d6ffd0ee6b744",
+      "neural_evidence_hash": "0198237be2380d7786565b693529b7404a56cbc6e32c97ccea4f9e1c14d7e3ff",
+      "llm_reasoning_hash": "d88b3bed23c31a08882019a8a968718be52ac05928c93e6269088ba7861a5ac3",
+      "guardrail_audit_hash": "c3ef13cb289d4fe3c37ef2a8781bf6b8e1ae38be06aae961709613d210c751aa",
+      "final_decision_hash": "a81151243d6c016469087c391dd80e8a5f72df982d27270d6b8ed31b82d1cfb0",
+      "selected_model": "Gompertz",
+      "guardrail_verdict": "PASSED",
+      "execution_time_ms": 41.37,
+      "metadata": {
+        "environment": "axolotl-m4",
+        "python_version": "3.10.19",
+        "dataset_type": "controlled_synthetic_microbial_growth"
+      }
+    }
+  },
+  "trajectory_data": {
+    "time_hours": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0,
+      16.0,
+      17.0,
+      18.0,
+      19.0,
+      20.0,
+      21.0,
+      22.0,
+      23.0,
+      24.0,
+      25.0,
+      26.0,
+      27.0,
+      28.0,
+      29.0,
+      30.0,
+      31.0,
+      32.0,
+      33.0,
+      34.0,
+      35.0,
+      36.0,
+      37.0,
+      38.0,
+      39.0,
+      40.0,
+      41.0,
+      42.0,
+      43.0,
+      44.0,
+      45.0,
+      46.0,
+      47.0,
+      48.0
+    ],
+    "od600_observed": [
+      0.0513,
+      0.0415,
+      0.0911,
+      0.5816,
+      1.2347,
+      1.3989,
+      1.57,
+      1.5236,
+      1.5394,
+      1.5082,
+      1.4266,
+      1.5974,
+      1.5724,
+      1.5571,
+      1.5831,
+      1.4709,
+      1.6597,
+      1.5253,
+      1.5652,
+      1.5879,
+      1.384,
+      1.6425,
+      1.5474,
+      1.4442,
+      1.5228,
+      1.7044,
+      1.53,
+      1.4604,
+      1.5344,
+      1.5667,
+      1.5076,
+      1.5086,
+      1.6134,
+      1.593,
+      1.5437,
+      1.54,
+      1.5527,
+      1.5186,
+      1.5435,
+      1.5521,
+      1.6308,
+      1.4755,
+      1.5993,
+      1.6423,
+      1.4937,
+      1.555,
+      1.5588,
+      1.5345,
+      1.516
+    ],
+    "od600_clean_ground_truth": [
+      0.0419,
+      0.0419,
+      0.0473,
+      0.5696,
+      1.2792,
+      1.491,
+      1.5341,
+      1.5422,
+      1.5437,
+      1.544,
+      1.544,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441,
+      1.5441
+    ],
+    "ground_truth_model": "Gompertz",
+    "ground_truth_parameters": {
+      "y0": 0.04193456349269229,
+      "A": 1.5021199526937343,
+      "mu_max": 0.9313083825282409,
+      "lambda_lag": 2.433439727305357
+    }
+  },
+  "mechanistic_ode_fits": {
+    "Gompertz": {
+      "model_name": "Gompertz",
+      "parameters": {
+        "y0": 0.05120211821679058,
+        "A": 1.4953756367486295,
+        "mu_max": 0.7552139371857153,
+        "lambda_lag": 2.283714408560763
+      },
+      "parameter_std_errors": {
+        "y0": 0.03810060238633646,
+        "A": 0.03946696566205137,
+        "mu_max": 0.09856491996256758,
+        "lambda_lag": 0.15728358367034292
+      },
+      "rss": 0.16661866581949192,
+      "r_squared": 0.9766150874875894,
+      "aic": -131.45354662719686,
+      "aicc": -130.54445571810595,
+      "bic": -123.88626543475435,
+      "converged": true,
+      "message": "Converged successfully."
+    },
+    "Logistic": {
+      "model_name": "Logistic",
+      "parameters": {
+        "y0": 0.018413017775449618,
+        "A": 1.526867603166934,
+        "mu_max": 0.7174822475819534,
+        "lambda_lag": 2.2452043295373456
+      },
+      "parameter_std_errors": {
+        "y0": 0.0448863217804334,
+        "A": 0.04620542464945204,
+        "mu_max": 0.08922852232827103,
+        "lambda_lag": 0.1847119399568098
+      },
+      "rss": 0.17274700519459912,
+      "r_squared": 0.9757549756902203,
+      "aic": -129.68364882834342,
+      "aicc": -128.77455791925252,
+      "bic": -122.11636763590091,
+      "converged": true,
+      "message": "Converged successfully."
+    },
+    "Richards": {
+      "model_name": "Richards",
+      "parameters": {
+        "y0": 0.04870277835085472,
+        "A": 1.4977830642915289,
+        "mu_max": 0.7470828258745476,
+        "lambda_lag": 2.2744341719444217,
+        "nu": 0.06916423236535364
+      },
+      "parameter_std_errors": {
+        "y0": 0.04344328650721471,
+        "A": 0.04434721257680097,
+        "mu_max": 0.11337700300726844,
+        "lambda_lag": 0.1709126439880727,
+        "nu": 0.5830158386973192
+      },
+      "rss": 0.16656530443295364,
+      "r_squared": 0.9766225767526703,
+      "aic": -129.46924190785967,
+      "aicc": -128.07389307065037,
+      "bic": -120.01014041730653,
+      "converged": true,
+      "message": "Converged successfully."
+    },
+    "Baranyi": {
+      "model_name": "Baranyi",
+      "parameters": {
+        "y0": 0.004028664823725929,
+        "A": 1.5472806365307568,
+        "mu_max": 1.1002182550066526,
+        "lambda_lag": 2.5544716175930264
+      },
+      "parameter_std_errors": {
+        "y0": 0.055655471097787984,
+        "A": 0.05644871718759236,
+        "mu_max": 0.0018495552252063162,
+        "lambda_lag": 0.16874847420335176
+      },
+      "rss": 0.25836753841429205,
+      "r_squared": 0.9637381427095889,
+      "aic": -109.95845322791091,
+      "aicc": -109.04936231882,
+      "bic": -102.3911720354684,
+      "converged": true,
+      "message": "Converged successfully."
+    }
+  },
+  "temporal_neural_evidence": {
+    "predicted_model_prior": "Gompertz",
+    "confidence": 0.2739371955394745,
+    "class_probabilities": {
+      "Gompertz": 0.2739371955394745,
+      "Logistic": 0.2737836539745331,
+      "Richards": 0.23431146144866943,
+      "Baranyi": 0.217967689037323
+    },
+    "latent_vector": [
+      0.0319691002368927,
+      -0.07473429292440414,
+      -0.16686777770519257,
+      0.8441570401191711,
+      0.7326788306236267,
+      1.3959712982177734,
+      -0.08679968118667603,
+      -0.1582767814397812
+    ],
+    "peak_attention_time_hours": 40.0
+  },
+  "structured_llm_reasoning": {
+    "hypothesis": {
+      "selected_model": "Gompertz",
+      "confidence_score": 0.928,
+      "mechanistic_rationale": "Model Gompertz achieves lowest penalized information criterion (AIC=-131.45, R\u00b2=0.9766) with congruent temporal lag-phase alignment matching GRU evidence.",
+      "temporal_features_analyzed": [
+        "Lag phase exit curvature",
+        "Inflection point growth velocity peak",
+        "Asymptotic stationary phase plateau stability"
+      ],
+      "cited_parameters": {
+        "y0": 0.05120211821679058,
+        "A": 1.4953756367486295,
+        "mu_max": 0.7552139371857153,
+        "lambda_lag": 2.283714408560763
+      },
+      "candidate_rankings": [
+        {
+          "model_name": "Gompertz",
+          "aic": -131.45354662719686,
+          "r_squared": 0.9766150874875894,
+          "plausibility_score": 0.693,
+          "primary_limitation_or_strength": "Optimal parsimony and dynamics match."
+        },
+        {
+          "model_name": "Logistic",
+          "aic": -129.68364882834342,
+          "r_squared": 0.9757549756902203,
+          "plausibility_score": 0.692,
+          "primary_limitation_or_strength": "Sub-optimal residual distribution or over-parameterization."
+        },
+        {
+          "model_name": "Richards",
+          "aic": -129.46924190785967,
+          "r_squared": 0.9766225767526703,
+          "plausibility_score": 0.678,
+          "primary_limitation_or_strength": "Sub-optimal residual distribution or over-parameterization."
+        },
+        {
+          "model_name": "Baranyi",
+          "aic": -109.95845322791091,
+          "r_squared": 0.9637381427095889,
+          "plausibility_score": 0.662,
+          "primary_limitation_or_strength": "Sub-optimal residual distribution or over-parameterization."
+        }
+      ],
+      "biological_interpretation": "The culture demonstrates a clear physiological adaptation period followed by rapid exponential biomass accumulation. Fitted max specific rate mu_max=0.755 h^-1 indicates robust metabolic efficiency."
+    },
+    "critique": {
+      "critique_score": 0.92,
+      "strengths": [
+        "Selected model Gompertz matches statistical best fit.",
+        "Cited parameters accurately reflect solver convergence states."
+      ],
+      "potential_flaws_or_hallucinations": [],
+      "refinement_suggestions": [
+        "Confirm parameter confidence bounds across biological replicates."
+      ],
+      "concurs_with_selection": true
+    },
+    "arbitration": {
+      "final_selected_model": "Gompertz",
+      "confidence": 0.928,
+      "arbitration_summary": "Consensus validated for Gompertz. Critique confirms robust parsimony and consistency with observations.",
+      "consensus_reached": true,
+      "requires_fallback_to_aic": false
+    }
+  },
+  "deterministic_guardrail_audit": {
+    "overall_status": "PASSED",
+    "passed_all_critical": true,
+    "total_checks": 9,
+    "passed_checks": 9,
+    "failed_checks": 0,
+    "warning_checks": 0,
+    "violations": [],
+    "rule_results": [
+      {
+        "rule": "NonNegativeInitialOD",
+        "status": "PASSED",
+        "details": "Initial population within plausible range.",
+        "metric_value": 0.05120211821679058,
+        "threshold": null
+      },
+      {
+        "rule": "PositiveGrowthRate",
+        "status": "PASSED",
+        "details": "Specific growth rate within valid physiological regime.",
+        "metric_value": 0.7552139371857153,
+        "threshold": null
+      },
+      {
+        "rule": "NonNegativeLagPhase",
+        "status": "PASSED",
+        "details": "Lag phase parameter is valid.",
+        "metric_value": 2.283714408560763,
+        "threshold": null
+      },
+      {
+        "rule": "PositiveCarryingCapacity",
+        "status": "PASSED",
+        "details": "Carrying capacity growth delta is valid.",
+        "metric_value": 1.4953756367486295,
+        "threshold": null
+      },
+      {
+        "rule": "MinimumGoodnessOfFit",
+        "status": "PASSED",
+        "details": "Fitted R-squared (0.9766) demonstrates high explanatory fidelity.",
+        "metric_value": 0.9766150874875894,
+        "threshold": null
+      },
+      {
+        "rule": "HallucinationCheck_y0",
+        "status": "PASSED",
+        "details": "LLM parameter y0 accurately reflects solver output.",
+        "metric_value": 0.0,
+        "threshold": null
+      },
+      {
+        "rule": "HallucinationCheck_A",
+        "status": "PASSED",
+        "details": "LLM parameter A accurately reflects solver output.",
+        "metric_value": 0.0,
+        "threshold": null
+      },
+      {
+        "rule": "HallucinationCheck_mu_max",
+        "status": "PASSED",
+        "details": "LLM parameter mu_max accurately reflects solver output.",
+        "metric_value": 0.0,
+        "threshold": null
+      },
+      {
+        "rule": "HallucinationCheck_lambda_lag",
+        "status": "PASSED",
+        "details": "LLM parameter lambda_lag accurately reflects solver output.",
+        "metric_value": 0.0,
+        "threshold": null
+      }
+    ]
+  }
+}

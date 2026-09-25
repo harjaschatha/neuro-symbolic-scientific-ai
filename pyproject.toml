@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuro-symbolic-scientific-ai"
+version = "1.0.0"
+description = "Neuro-Symbolic AI Framework for Scientific Model Selection — MSc Research Project"
+readme = "README.md"
+authors = [{ name = "Research Team" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "scipy>=1.10.0",
+    "numpy>=1.24.0",
+    "pydantic>=2.0.0",
+    "matplotlib>=3.7.0",
+    "rich>=13.0.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+hpc = [
+    "vllm>=0.4.0",
+    "transformers>=4.40.0",
+]
