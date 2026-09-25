@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="770" viewBox="0 0 1000 770" role="img" aria-labelledby="title desc">
+<title id="title">Research workflow and portfolio scope</title>
+<desc id="desc">Five research stages followed by a note distinguishing the mock portfolio demo.</desc>
+<rect width="1000" height="770" fill="#101827"/>
+<g font-family="Arial, sans-serif" text-anchor="middle">
+<text x="500" y="48" fill="#ffffff" font-size="26">Research workflow: Final_Project</text>
+<rect x="75" y="78" width="850" height="86" rx="12" fill="#1e3048" stroke="#639dda"/>
+<text x="500" y="111" fill="#ffffff" font-size="21">Synthetic bioprocess trajectories</text>
+<text x="500" y="140" fill="#c3d5e8" font-size="16">Multivariate inputs with known generating mechanisms</text>
+<path d="M500 166 v19 m-6 -6 l6 6 6 -6" fill="none" stroke="#91b9df" stroke-width="2"/>
+<rect x="75" y="193" width="850" height="86" rx="12" fill="#1e3048" stroke="#639dda"/>
+<text x="500" y="226" fill="#ffffff" font-size="21">Residual evidence and biological diagnostics</text>
+<text x="500" y="255" fill="#c3d5e8" font-size="16">Temporal models and diagnostic rules provide supporting evidence</text>
+<path d="M500 281 v19 m-6 -6 l6 6 6 -6" fill="none" stroke="#91b9df" stroke-width="2"/>
+<rect x="75" y="308" width="850" height="86" rx="12" fill="#1e3048" stroke="#639dda"/>
+<text x="500" y="341" fill="#ffffff" font-size="21">Structured hypothesis</text>
+<text x="500" y="370" fill="#c3d5e8" font-size="16">Classifier, rules, or LLM; source recorded per case</text>
+<path d="M500 396 v19 m-6 -6 l6 6 6 -6" fill="none" stroke="#91b9df" stroke-width="2"/>
+<rect x="75" y="423" width="850" height="86" rx="12" fill="#1e3048" stroke="#639dda"/>
+<text x="500" y="456" fill="#ffffff" font-size="21">Mechanistic fitting and guarded selection</text>
+<text x="500" y="485" fill="#c3d5e8" font-size="16">Candidate ranking, constraints, and deterministic overrides</text>
+<path d="M500 511 v19 m-6 -6 l6 6 6 -6" fill="none" stroke="#91b9df" stroke-width="2"/>
+<rect x="75" y="538" width="850" height="86" rx="12" fill="#1e3048" stroke="#639dda"/>
+<text x="500" y="571" fill="#ffffff" font-size="21">Saved decisions and evaluation</text>
+<text x="500" y="600" fill="#c3d5e8" font-size="16">Projection-aware, exact-label, and fixed-family metrics</text>
+<text x="500" y="685" fill="#f6c66b" font-size="20">Portfolio demo: separate illustrative implementation</text>
+<text x="500" y="716" fill="#c3d5e8" font-size="17">Four growth curves · untrained GRU · mock reasoning</text>
+<text x="500" y="745" fill="#c3d5e8" font-size="16">Reported research metrics come from saved source artifacts.</text>
+</g></svg>

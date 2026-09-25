@@ -1,6 +1,6 @@
 """
 Neuro-Symbolic AI Framework for Scientific Model Selection
-MSc Research Project — Safe Portfolio & Synthetic Benchmark Package
+Illustrative curve-fitting package; research evidence lives in results/verified
 """
 
 from src.ode_fitting import (

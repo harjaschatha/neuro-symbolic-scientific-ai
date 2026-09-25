@@ -31,8 +31,10 @@ from src.audit_logger import AuditLogger
 def run_pipeline(output_json_path: str = "examples/synthetic-example.json"):
     print("=" * 78)
     print(" NEURO-SYMBOLIC AI FRAMEWORK FOR SCIENTIFIC MODEL SELECTION")
-    print(" MSc Research Project — Synthetic Demonstration & Audit Workflow")
+    print(" Illustrative demo — untrained GRU and mock reasoning")
     print("=" * 78)
+
+    print("Not a reproduction of the reported Final_Project research results.")
 
     # 1. Generate Controlled Synthetic Trajectory
     print("\n[Step 1] Synthesizing microbial growth trajectory (Gompertz ground truth)...")
@@ -66,7 +68,7 @@ def run_pipeline(output_json_path: str = "examples/synthetic-example.json"):
     encoder = TemporalEvidenceEncoder()
     neural_evidence = encoder.extract_evidence(t, y)
     print(f"  • Neural Prior:        {neural_evidence['predicted_model_prior']} (Confidence: {neural_evidence['confidence']:.3f})")
-    print(f"  • Peak Attention Time: {neural_evidence['peak_attention_time_hours']:.2f} h (Inflection Transition)")
+    print(f"  • Peak Attention Time: {neural_evidence['peak_attention_time_hours']:.2f} h (untrained attention; not a validated transition)")
     print(f"  • Class Probabilities: {neural_evidence['class_probabilities']}")
 
     # 4. Structured LLM Scientific Reasoning & Hypothesis Generation
@@ -115,7 +117,9 @@ def run_pipeline(output_json_path: str = "examples/synthetic-example.json"):
         selected_model=arbitration.final_selected_model,
         execution_time_ms=elapsed_total_ms,
         metadata={
-            "environment": "axolotl-m4",
+            "artifact_kind": "illustrative_demo_not_research_evidence",
+            "reasoning_mode": "mock_deterministic",
+            "neural_weights": "randomly_initialized",
             "python_version": sys.version.split()[0],
             "dataset_type": "controlled_synthetic_microbial_growth",
         },
@@ -128,7 +132,10 @@ def run_pipeline(output_json_path: str = "examples/synthetic-example.json"):
     full_example_payload = {
         "metadata": {
             "title": "Neuro-Symbolic Scientific Model Selection — Synthetic Case Study",
-            "project": "MSc Research Project",
+            "project": "Separate portfolio illustration",
+            "artifact_kind": "illustrative_demo_not_research_evidence",
+            "reasoning_mode": "mock_deterministic",
+            "neural_weights": "randomly_initialized",
             "data_governance_notice": "Synthetically generated microbial growth trajectory. Contains zero proprietary or non-public experimental data.",
             "provenance": record.to_dict(),
         },

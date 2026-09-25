@@ -1,12 +1,8 @@
-"""
-Five-Arm Experimental Evaluation Framework (500 Trajectories per Arm)
-=====================================================================
-Runs rigorous comparative benchmarks across five experimental arms:
-1. Pure Mechanistic ODE (AIC/BIC selection)
-2. Pure Neural (Bidirectional GRU Classifier)
-3. Pure LLM Zero-Shot (Prompt-only selection)
-4. Unconstrained Hybrid (LLM + ODE without guardrails)
-5. Full Neuro-Symbolic Framework (ODE + GRU + LLM + Guardrails + Arbitration)
+"""Illustrative five-arm simulation; NOT empirical research evaluation.
+
+Uses an untrained default GRU, mock reasoning, ground-truth-assisted random
+predictions, injected parameter drift, and constructed hallucination counts.
+Reported research evidence is exported by scripts/export_verified_results.py.
 """
 
 from __future__ import annotations
@@ -60,6 +56,9 @@ class EvaluationSummary:
     def to_dict(self) -> Dict[str, Any]:
         return {
             "timestamp_utc": self.timestamp_utc,
+            "evaluation_kind": "illustrative_simulation_not_research_results",
+            "reasoning_mode": "mock_deterministic",
+            "neural_weights": "randomly_initialized",
             "total_trajectories_evaluated": self.total_trajectories_evaluated,
             "snr_db": self.snr_db,
             "arm_results": {
@@ -78,7 +77,7 @@ class EvaluationSummary:
 
 
 class FiveArmExperimentRunner:
-    """Executes the complete 5-arm comparative evaluation benchmark."""
+    """Executes illustrative simulation paths, not research measurements."""
 
     def __init__(
         self,
@@ -97,6 +96,7 @@ class FiveArmExperimentRunner:
 
     def run_benchmark(self, verbose: bool = False) -> EvaluationSummary:
         """Executes all 5 arms on synthesized trajectories."""
+        print("ILLUSTRATION ONLY: untrained GRU, simulated LLM predictions and hallucination rates.")
         print(f"[Benchmark] Generating {self.samples_per_arm} synthetic test trajectories (SNR={self.snr_db}dB)...")
         dataset = SyntheticTrajectoryGenerator.generate_batch(
             count=self.samples_per_arm,
@@ -230,7 +230,7 @@ class FiveArmExperimentRunner:
                     # Guardrail corrects to highest AIC valid candidate
                     selected_model = min(ode_fits.keys(), key=lambda k: ode_fits[k].aic)
 
-                # 0% hallucination due to hard deterministic enforcement
+                # Constructed zero in this simulation; not measured LLM hallucination performance.
                 is_hallucinated = False
 
             elapsed_ms = (time.perf_counter() - start_t) * 1000.0
@@ -255,7 +255,7 @@ class FiveArmExperimentRunner:
         mean_rss_val = float(np.mean(rss_list))
         avg_lat = float(np.mean(latencies))
         
-        # Expected calibration error approximation
+        # Illustrative placeholder, not binned empirical calibration error.
         ece = float(abs(acc_pct / 100.0 - 0.92) * 0.12)
 
         return ArmResult(

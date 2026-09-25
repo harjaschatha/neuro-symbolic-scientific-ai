@@ -1,0 +1,104 @@
+{
+  "family_mapping": {
+    "baseline": "baseline",
+    "death_decay": "death_decay",
+    "inhibition": "inhibition",
+    "lag_adaptation": "lag_adaptation",
+    "maintenance": "maintenance",
+    "maintenance_inhibition": "inhibition",
+    "oxygen_limitation": "inhibition",
+    "product_inhibition": "inhibition",
+    "switching": "switching",
+    "switching_inhibition": "switching",
+    "time_gating": "time_gating",
+    "yield_drift": "yield_drift"
+  },
+  "limitations": [
+    "Saved projection-aware targets differ between Stage E arms.",
+    "Earlier report HPC provenance remains unresolved; local ablation is a different artifact.",
+    "Stage E run-time configuration and commit snapshots are not verified.",
+    "Synthetic seed-42 development evidence does not establish real-world generalization.",
+    "No hallucination rate, parameter MAPE, RSS, or latency claim is derived here."
+  ],
+  "paired_stage_e": {
+    "exact": {
+      "harmed": 6,
+      "rescued": 166
+    },
+    "family": {
+      "harmed": 16,
+      "rescued": 105
+    },
+    "saved": {
+      "harmed": 42,
+      "rescued": 41
+    }
+  },
+  "result_sets": {
+    "earlier_local_ablation": {
+      "exact_accuracy_percent": 75.2,
+      "exact_correct": 376,
+      "family_accuracy_percent": 75.2,
+      "family_correct": 376,
+      "hypothesis_sources": {
+        "frozen_classifier": 464,
+        "llm": 36
+      },
+      "residual_sources": {
+        "seqmlp": 500
+      },
+      "runs": 500,
+      "saved_accuracy_percent": 75.2,
+      "saved_correct": 376
+    },
+    "earlier_report": {
+      "exact_accuracy_percent": 75.0,
+      "exact_correct": 375,
+      "family_accuracy_percent": 75.0,
+      "family_correct": 375,
+      "hypothesis_sources": {
+        "frozen_classifier": 464,
+        "llm": 36
+      },
+      "residual_sources": {
+        "seqmlp": 500
+      },
+      "runs": 500,
+      "saved_accuracy_percent": 89.8,
+      "saved_correct": 449
+    },
+    "stage_e_expanded": {
+      "exact_accuracy_percent": 63.2,
+      "exact_correct": 316,
+      "family_accuracy_percent": 67.0,
+      "family_correct": 335,
+      "hypothesis_sources": {
+        "llm": 91,
+        "llm_arbitration": 409
+      },
+      "residual_sources": {
+        "seqmlp": 500
+      },
+      "runs": 500,
+      "saved_accuracy_percent": 83.6,
+      "saved_correct": 418
+    },
+    "stage_e_standard": {
+      "exact_accuracy_percent": 31.2,
+      "exact_correct": 156,
+      "family_accuracy_percent": 49.2,
+      "family_correct": 246,
+      "hypothesis_sources": {
+        "llm": 71,
+        "llm_arbitration": 429
+      },
+      "residual_sources": {
+        "seqmlp": 500
+      },
+      "runs": 500,
+      "saved_accuracy_percent": 83.8,
+      "saved_correct": 419
+    }
+  },
+  "truth_normalization": "null or empty true_mechanism means baseline"
+}

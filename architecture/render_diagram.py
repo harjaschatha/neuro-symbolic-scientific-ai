@@ -1,168 +1,29 @@
-"""
-Generates high-resolution architecture diagram for architecture/system-overview.png
-"""
-
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
+#!/usr/bin/env python3
+"""Render the documented research workflow as a code-native SVG."""
+from html import escape
 from pathlib import Path
 
-def generate_architecture_diagram():
-    fig, ax = plt.subplots(figsize=(16, 10), dpi=300)
-    ax.set_facecolor("#0d1117")
-    fig.patch.set_facecolor("#0d1117")
-
-    # Title & Subtitle
-    ax.text(
-        0.5, 0.95,
-        "Neuro-Symbolic AI Framework for Scientific Model Selection",
-        color="#f0f6fc", fontsize=20, weight="bold", ha="center", va="center"
-    )
-    ax.text(
-        0.5, 0.91,
-        "Hybrid Architecture: Mechanistic ODEs + Temporal Attention GRU + Structured LLM Reasoning + Deterministic Guardrails",
-        color="#8b949e", fontsize=11, ha="center", va="center"
-    )
-
-    # Helper function to draw rounded boxes
-    def draw_box(x, y, w, h, title, subtitle, bg_color, border_color, text_color="#f0f6fc", items=None):
-        rect = patches.FancyBboxPatch(
-            (x, y), w, h,
-            boxstyle="round,pad=0.02,rounding_size=0.025",
-            facecolor=bg_color, edgecolor=border_color, linewidth=2.0
-        )
-        ax.add_patch(rect)
-        ax.text(x + w/2, y + h - 0.04, title, color=text_color, fontsize=12, weight="bold", ha="center", va="top")
-        if subtitle:
-            ax.text(x + w/2, y + h - 0.08, subtitle, color="#8b949e", fontsize=8.5, style="italic", ha="center", va="top")
-        
-        if items:
-            for i, item in enumerate(items):
-                ax.text(x + 0.02, y + h - 0.13 - i * 0.038, f"• {item}", color="#c9d1d9", fontsize=8.5, va="top")
-
-    # Helper for drawing flow arrows
-    def draw_arrow(x1, y1, x2, y2, label=""):
-        ax.annotate(
-            "", xy=(x2, y2), xytext=(x1, y1),
-            arrowprops=dict(arrowstyle="->", color="#58a6ff", lw=2.2, mutation_scale=18)
-        )
-        if label:
-            mid_x, mid_y = (x1 + x2)/2, (y1 + y2)/2
-            ax.text(mid_x, mid_y + 0.018, label, color="#79c0ff", fontsize=8, ha="center", weight="bold")
-
-    # 1. INPUT DATA LAYER (Left Top)
-    draw_box(
-        0.04, 0.58, 0.25, 0.28,
-        "1. Experimental Trajectory",
-        "Raw Observations & Kinetics",
-        "#161b22", "#30363d", "#58a6ff",
-        [
-            "Time-series (OD600 / biomass)",
-            "Sparse / noisy sampling points",
-            "Finite differences: dy/dt, d²y/dt²",
-            "Zero-leakage data isolation"
-        ]
-    )
-
-    # 2. MECHANISTIC ODE REGRESSION (Center-Left Top)
-    draw_box(
-        0.36, 0.62, 0.28, 0.24,
-        "2A. Mechanistic ODE Suite",
-        "Deterministic Non-linear Least Squares",
-        "#161b22", "#238636", "#3fb950",
-        [
-            "Modified Gompertz & Logistic",
-            "Richards (asymmetry ν factor)",
-            "Baranyi-Roberts dynamic model",
-            "Loss: AIC, AICc, BIC, RSS, R²"
-        ]
-    )
-
-    # 3. TEMPORAL NEURAL ENCODER (Center-Left Bottom)
-    draw_box(
-        0.36, 0.33, 0.28, 0.25,
-        "2B. Temporal Neural Encoder",
-        "PyTorch BiGRU + Attention Pooling",
-        "#161b22", "#1f6feb", "#58a6ff",
-        [
-            "Bidirectional Recurrent GRU",
-            "Multi-Head Temporal Attention",
-            "Dynamic inflection detection",
-            "Latent kinetic representation"
-        ]
-    )
-
-    # 4. STRUCTURED LLM REASONING & CRITIQUE (Center-Right)
-    draw_box(
-        0.70, 0.44, 0.26, 0.42,
-        "3. Symbolic Reasoning Engine",
-        "Structured Hypotheses & Multi-Agent Critique",
-        "#161b22", "#a371f7", "#d2a8ff",
-        [
-            "Strict JSON schema enforcement",
-            "Parsimony & penalty reasoning",
-            "Domain microbiological priors",
-            "Adversarial critique agent",
-            "Arbitration & fallback solver"
-        ]
-    )
-
-    # 5. DETERMINISTIC GUARDRAILS (Bottom Center)
-    draw_box(
-        0.36, 0.05, 0.28, 0.23,
-        "4. Deterministic Guardrails",
-        "Safety Boundaries & Hallucination Filter",
-        "#161b22", "#da3633", "#f85149",
-        [
-            "Biophysical parameter bounds (μ > 0, λ ≥ 0)",
-            "Asymptotic monotonicity check",
-            "Parameter hallucination detector",
-            "Automated fallback / override"
-        ]
-    )
-
-    # 6. AUDIT & PROVENANCE (Bottom Right)
-    draw_box(
-        0.70, 0.05, 0.26, 0.23,
-        "5. Cryptographic Provenance",
-        "Reproducibility & Governance Layer",
-        "#161b22", "#d29922", "#e3b341",
-        [
-            "SHA-256 input / prompt digest",
-            "Deterministic run ledger (.jsonl)",
-            "Execution latency tracking",
-            "Responsible asset governance"
-        ]
-    )
-
-    # ARROWS & CONNECTIONS
-    # Input -> ODE Suite & Temporal Encoder
-    draw_arrow(0.29, 0.74, 0.36, 0.74, "Data Points")
-    draw_arrow(0.29, 0.65, 0.36, 0.45, "Feature Vector")
-
-    # ODE Suite -> LLM Engine
-    draw_arrow(0.64, 0.74, 0.70, 0.74, "AIC / R² / Params")
-
-    # Neural Encoder -> LLM Engine
-    draw_arrow(0.64, 0.45, 0.70, 0.55, "Temporal Evidence")
-
-    # LLM Engine -> Guardrails
-    draw_arrow(0.75, 0.44, 0.55, 0.28, "Proposed Hypothesis")
-
-    # ODE Suite -> Guardrails (Ground truth params)
-    draw_arrow(0.50, 0.62, 0.50, 0.28, "Fitted Ground Truth")
-
-    # Guardrails -> Provenance
-    draw_arrow(0.64, 0.16, 0.70, 0.16, "Audit Verdict")
-
-    ax.set_xlim(0, 1)
-    ax.set_ylim(0, 1)
-    ax.axis("off")
-
-    output_path = Path("architecture/system-overview.png")
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    plt.savefig(output_path, bbox_inches="tight", facecolor=fig.get_facecolor(), edgecolor="none")
-    plt.close()
-    print(f"[Success] Saved architecture diagram to {output_path.resolve()}")
-
-if __name__ == "__main__":
-    generate_architecture_diagram()
+steps = [
+    ('Synthetic bioprocess trajectories', 'Multivariate inputs with known generating mechanisms'),
+    ('Residual evidence and biological diagnostics', 'Temporal models and diagnostic rules provide supporting evidence'),
+    ('Structured hypothesis', 'Classifier, rules, or LLM; source recorded per case'),
+    ('Mechanistic fitting and guarded selection', 'Candidate ranking, constraints, and deterministic overrides'),
+    ('Saved decisions and evaluation', 'Projection-aware, exact-label, and fixed-family metrics'),
+]
+parts = ['<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="770" viewBox="0 0 1000 770" role="img" aria-labelledby="title desc">',
+         '<title id="title">Research workflow and portfolio scope</title>',
+         '<desc id="desc">Five research stages followed by a note distinguishing the mock portfolio demo.</desc>',
+         '<rect width="1000" height="770" fill="#101827"/>',
+         '<g font-family="Arial, sans-serif" text-anchor="middle">',
+         '<text x="500" y="48" fill="#ffffff" font-size="26">Research workflow: Final_Project</text>']
+for i, (title, subtitle) in enumerate(steps):
+    y = 78 + i * 115
+    parts.extend([f'<rect x="75" y="{y}" width="850" height="86" rx="12" fill="#1e3048" stroke="#639dda"/>',
+                  f'<text x="500" y="{y+33}" fill="#ffffff" font-size="21">{escape(title)}</text>',
+                  f'<text x="500" y="{y+62}" fill="#c3d5e8" font-size="16">{escape(subtitle)}</text>'])
+    if i < len(steps) - 1:
+        parts.append(f'<path d="M500 {y+88} v19 m-6 -6 l6 6 6 -6" fill="none" stroke="#91b9df" stroke-width="2"/>')
+parts.extend(['<text x="500" y="685" fill="#f6c66b" font-size="20">Portfolio demo: separate illustrative implementation</text>',
+              '<text x="500" y="716" fill="#c3d5e8" font-size="17">Four growth curves · untrained GRU · mock reasoning</text>',
+              '<text x="500" y="745" fill="#c3d5e8" font-size="16">Reported research metrics come from saved source artifacts.</text>', '</g></svg>'])
+Path(__file__).with_name('system-overview.svg').write_text('\n'.join(parts) + '\n')

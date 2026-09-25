@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "neuro-symbolic-scientific-ai"
 version = "1.0.0"
-description = "Neuro-Symbolic AI Framework for Scientific Model Selection — MSc Research Project"
+description = "Research result evidence and separate illustrative neuro-symbolic curve-fitting demo"
 readme = "README.md"
 authors = [{ name = "Research Team" }]
 license = { text = "MIT" }

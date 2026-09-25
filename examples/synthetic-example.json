@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Neuro-Symbolic Scientific Model Selection \u2014 Synthetic Case Study",
-    "project": "MSc Research Project",
+    "project": "Separate portfolio illustration",
     "data_governance_notice": "Synthetically generated microbial growth trajectory. Contains zero proprietary or non-public experimental data.",
     "provenance": {
       "run_id": "DEMO-RUN-2026-09-SYNTH-01",
@@ -20,7 +20,11 @@
         "python_version": "3.10.19",
         "dataset_type": "controlled_synthetic_microbial_growth"
       }
-    }
+    },
+    "artifact_kind": "illustrative_demo_not_research_evidence",
+    "reasoning_mode": "mock_deterministic",
+    "neural_weights": "randomly_initialized",
+    "reporting_note": "Historical demo output; not evidence for Final_Project research performance. Original provenance record retained unchanged."
   },
   "trajectory_data": {
     "time_hours": [

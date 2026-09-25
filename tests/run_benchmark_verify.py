@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Benchmark Generation and Verification Script
+Illustrative Simulation Runner — Not Research Verification
 ===========================================
+Uses mock reasoning, an untrained GRU, and simulated LLM predictions.
 Generates a multi-trajectory sample dataset in examples/synthetic_benchmark_sample.json
 and executes the 5-Arm benchmark suite across diverse noise conditions.
 """
@@ -18,7 +19,7 @@ from src.evaluation import FiveArmExperimentRunner
 
 
 def main():
-    print("[1/2] Generating benchmark sample trajectories (10 trajectories across models)...")
+    print("[1/2] Generating benchmark sample trajectories (12 trajectories across models)...")
     sample_trajectories = []
     for model in ["Gompertz", "Logistic", "Richards", "Baranyi"]:
         for snr in [15.0, 25.0, 35.0]:
@@ -42,7 +43,7 @@ def main():
         json.dump(sample_trajectories, f, indent=2)
     print(f"  -> Saved {len(sample_trajectories)} samples to {sample_file.name}")
 
-    print("\n[2/2] Running 5-Arm Experiment Runner (100 synthetic trajectories per arm verification)...")
+    print("\n[2/2] Running 5-Arm Experiment Runner (100 synthetic trajectories per arm illustration)...")
     runner = FiveArmExperimentRunner(samples_per_arm=100, snr_db=25.0, seed=42)
     summary = runner.run_benchmark(verbose=False)
 

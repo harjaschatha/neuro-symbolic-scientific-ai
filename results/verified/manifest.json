@@ -1,0 +1,28 @@
+{
+  "artifacts": {
+    "cases.json": "917d6662c367152bdbb55ce61377685567a8a4059acb98a2d715dc8385d390d3",
+    "summary.csv": "05a06777ae1c86b10676c1aa437361400b67bee4e9c8be3e2e522318f5000504",
+    "summary.json": "f2b315ef1043544a8ba6ba15b1bc8e8f6a0c97fe7f95bd5ec680aac9b6b4b1b7"
+  },
+  "provenance": "Hashes verify local artifact identity, not original HPC execution provenance.",
+  "schema_version": 1,
+  "source_root_label": "Final_Project",
+  "sources": {
+    "earlier_local_ablation": {
+      "path": "neuro_symbolic_bioprocess/ns_pipeline_outputs/hpc_gated_override_v1/full_neuro_symbolic/results.json",
+      "sha256": "d75d1d9a88bc9891ec3b11418c493832d7eda6dbe23aecd487876dd358b795ce"
+    },
+    "earlier_report": {
+      "path": "neuro_symbolic_bioprocess/ns_pipeline_outputs/report_500/results.json",
+      "sha256": "6a9556d3b655d5197c1003849115f003fcba686f200030c559888fa62494d0c2"
+    },
+    "stage_e_expanded": {
+      "path": "neuro_symbolic_bioprocess/ns_pipeline_outputs/stage_e_archives/job36212117_seed42/results/expanded_ode_results.json",
+      "sha256": "8edcec866c2ce4da7d82a81cc4210770255008a84d9400944003a4d47980ec22"
+    },
+    "stage_e_standard": {
+      "path": "neuro_symbolic_bioprocess/ns_pipeline_outputs/stage_e_archives/job36212117_seed42/results/standard_results.json",
+      "sha256": "f4382922ba2a6b58a73e1c6407710f7bc9898af44054d819e2ba8fd935552166"
+    }
+  }
+}
