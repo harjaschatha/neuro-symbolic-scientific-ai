@@ -1,0 +1,618 @@
+{
+  "source_root_label": "Final_Project",
+  "assets": [
+    {
+      "source": "synthetic_data/scenario_0_baseline_cal.csv",
+      "destination": "data/synthetic/scenario_0_baseline_cal.csv",
+      "source_sha256": "4a69c7492c8c64ef61cb62c3f90d6bfce01af14b9e7ddc81584b5a57bf084aa2",
+      "artifact_sha256": "4a69c7492c8c64ef61cb62c3f90d6bfce01af14b9e7ddc81584b5a57bf084aa2",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_0_baseline_cal.png",
+      "destination": "figures/synthetic/scenario_0_baseline_cal.png",
+      "source_sha256": "d3f1573e17a4d31018871c7f3dd4613d16ccd33c655a2d5a39fe066c1213fcf5",
+      "artifact_sha256": "d3f1573e17a4d31018871c7f3dd4613d16ccd33c655a2d5a39fe066c1213fcf5",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_0_baseline_val.csv",
+      "destination": "data/synthetic/scenario_0_baseline_val.csv",
+      "source_sha256": "05c7b207b7a54104696f4440df038847937ade8ded886e9d6f7909a729a95be0",
+      "artifact_sha256": "05c7b207b7a54104696f4440df038847937ade8ded886e9d6f7909a729a95be0",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_0_baseline_val.png",
+      "destination": "figures/synthetic/scenario_0_baseline_val.png",
+      "source_sha256": "17c78f1a4287d46222c688d35ca9de82338c9afa0e9cdaa900ea5d6f255ae326",
+      "artifact_sha256": "17c78f1a4287d46222c688d35ca9de82338c9afa0e9cdaa900ea5d6f255ae326",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_10_product_inhibition_cal.csv",
+      "destination": "data/synthetic/scenario_10_product_inhibition_cal.csv",
+      "source_sha256": "9052e123c5221cb2291ef519e15352367745ec0470e2ba86e9a48848085ea69d",
+      "artifact_sha256": "9052e123c5221cb2291ef519e15352367745ec0470e2ba86e9a48848085ea69d",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_10_product_inhibition_cal.png",
+      "destination": "figures/synthetic/scenario_10_product_inhibition_cal.png",
+      "source_sha256": "784e680b83a84c6d775665c9af7d3d9bff32df5ec21cb0db9fb38aabc8c98d87",
+      "artifact_sha256": "784e680b83a84c6d775665c9af7d3d9bff32df5ec21cb0db9fb38aabc8c98d87",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_10_product_inhibition_val.csv",
+      "destination": "data/synthetic/scenario_10_product_inhibition_val.csv",
+      "source_sha256": "e9472961b78e4f61e69f860c568134e634ed2623886d2576e60a933dc7ab1348",
+      "artifact_sha256": "e9472961b78e4f61e69f860c568134e634ed2623886d2576e60a933dc7ab1348",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_10_product_inhibition_val.png",
+      "destination": "figures/synthetic/scenario_10_product_inhibition_val.png",
+      "source_sha256": "1983596d273f60745cf897b19d9b830d255c88a02c7f580c44e63805c08457be",
+      "artifact_sha256": "1983596d273f60745cf897b19d9b830d255c88a02c7f580c44e63805c08457be",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_11_oxygen_limitation_cal.csv",
+      "destination": "data/synthetic/scenario_11_oxygen_limitation_cal.csv",
+      "source_sha256": "942adf79d2e004412cb22f735a5598e4f8058eb3f6feccc42543c95b88a7e061",
+      "artifact_sha256": "942adf79d2e004412cb22f735a5598e4f8058eb3f6feccc42543c95b88a7e061",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_11_oxygen_limitation_cal.png",
+      "destination": "figures/synthetic/scenario_11_oxygen_limitation_cal.png",
+      "source_sha256": "c6adaad7baab1418a9f6e8e89375e6e80135dd9a75b29c80e8556b1a8fffb23f",
+      "artifact_sha256": "c6adaad7baab1418a9f6e8e89375e6e80135dd9a75b29c80e8556b1a8fffb23f",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_11_oxygen_limitation_val.csv",
+      "destination": "data/synthetic/scenario_11_oxygen_limitation_val.csv",
+      "source_sha256": "84cc66661dc0eee73e7e236e92c138b924064f6223ae3a0d0af5d589246bbd08",
+      "artifact_sha256": "84cc66661dc0eee73e7e236e92c138b924064f6223ae3a0d0af5d589246bbd08",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_11_oxygen_limitation_val.png",
+      "destination": "figures/synthetic/scenario_11_oxygen_limitation_val.png",
+      "source_sha256": "1695fee12be06038b75730f867395671b6ee7dc4a6ad6cc6058937d61805b121",
+      "artifact_sha256": "1695fee12be06038b75730f867395671b6ee7dc4a6ad6cc6058937d61805b121",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_12_death_decay_cal.csv",
+      "destination": "data/synthetic/scenario_12_death_decay_cal.csv",
+      "source_sha256": "e476f0bd50fe0f59be83acbc228db5d10b0c4d44fffaf67ea636a9e89786ebc1",
+      "artifact_sha256": "e476f0bd50fe0f59be83acbc228db5d10b0c4d44fffaf67ea636a9e89786ebc1",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_12_death_decay_cal.png",
+      "destination": "figures/synthetic/scenario_12_death_decay_cal.png",
+      "source_sha256": "ee08a097eae7ba0bef53da28a88ef1d727bb19c8ffa04160cb436d0146006d4d",
+      "artifact_sha256": "ee08a097eae7ba0bef53da28a88ef1d727bb19c8ffa04160cb436d0146006d4d",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_12_death_decay_val.csv",
+      "destination": "data/synthetic/scenario_12_death_decay_val.csv",
+      "source_sha256": "c1738e3ba90403ec2216792b83aa0f56491dc43ffb60056196d8c008894c0360",
+      "artifact_sha256": "c1738e3ba90403ec2216792b83aa0f56491dc43ffb60056196d8c008894c0360",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_12_death_decay_val.png",
+      "destination": "figures/synthetic/scenario_12_death_decay_val.png",
+      "source_sha256": "d39cf023b3f812afee97df54d5d0033805aeba21e50d0049f41b8f666ea3b7cb",
+      "artifact_sha256": "d39cf023b3f812afee97df54d5d0033805aeba21e50d0049f41b8f666ea3b7cb",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_13_switching_maintenance_cal.csv",
+      "destination": "data/synthetic/scenario_13_switching_maintenance_cal.csv",
+      "source_sha256": "f3e76e5d1f16777cfd5e501a5767658c5f90979d991e700c2f33302700678c15",
+      "artifact_sha256": "f3e76e5d1f16777cfd5e501a5767658c5f90979d991e700c2f33302700678c15",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_13_switching_maintenance_cal.png",
+      "destination": "figures/synthetic/scenario_13_switching_maintenance_cal.png",
+      "source_sha256": "136c480b78dc0814273f140fd82311c2774b9d3648b2c4cb447b2c9f8905ac64",
+      "artifact_sha256": "136c480b78dc0814273f140fd82311c2774b9d3648b2c4cb447b2c9f8905ac64",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_13_switching_maintenance_val.csv",
+      "destination": "data/synthetic/scenario_13_switching_maintenance_val.csv",
+      "source_sha256": "ea2189ed918c25283872d12e5aa61064bd09690cb8e8013893c7ba972f242a76",
+      "artifact_sha256": "ea2189ed918c25283872d12e5aa61064bd09690cb8e8013893c7ba972f242a76",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_13_switching_maintenance_val.png",
+      "destination": "figures/synthetic/scenario_13_switching_maintenance_val.png",
+      "source_sha256": "a3d334e768ba4e72e5078ec75ea26c225fd7860350e9afc7ae6ae086e7847c02",
+      "artifact_sha256": "a3d334e768ba4e72e5078ec75ea26c225fd7860350e9afc7ae6ae086e7847c02",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_1_maintenance_cal.csv",
+      "destination": "data/synthetic/scenario_1_maintenance_cal.csv",
+      "source_sha256": "7c60094f5d66147401dec8117b74b51bcfe2a125866c24d28d908872ae125319",
+      "artifact_sha256": "7c60094f5d66147401dec8117b74b51bcfe2a125866c24d28d908872ae125319",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_1_maintenance_cal.png",
+      "destination": "figures/synthetic/scenario_1_maintenance_cal.png",
+      "source_sha256": "7c894c3500102941050c7f5f7b9cd5be345e16df06ea2b40c2907f2ae2fc708e",
+      "artifact_sha256": "7c894c3500102941050c7f5f7b9cd5be345e16df06ea2b40c2907f2ae2fc708e",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_1_maintenance_val.csv",
+      "destination": "data/synthetic/scenario_1_maintenance_val.csv",
+      "source_sha256": "a041cb16d7157864829bc543557f1103af509eb5777932452fba6be1bdaf1198",
+      "artifact_sha256": "a041cb16d7157864829bc543557f1103af509eb5777932452fba6be1bdaf1198",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_1_maintenance_val.png",
+      "destination": "figures/synthetic/scenario_1_maintenance_val.png",
+      "source_sha256": "69ef5bcb6b753db79cfaf23ec0b474a6f12eec89d6f71190b51a77e8d8ea1bcb",
+      "artifact_sha256": "69ef5bcb6b753db79cfaf23ec0b474a6f12eec89d6f71190b51a77e8d8ea1bcb",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_2_inhibition_cal.csv",
+      "destination": "data/synthetic/scenario_2_inhibition_cal.csv",
+      "source_sha256": "8a734c75b663158602e24710964869fc3686ccf3c9a337dcf1789ba3419db78c",
+      "artifact_sha256": "8a734c75b663158602e24710964869fc3686ccf3c9a337dcf1789ba3419db78c",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_2_inhibition_cal.png",
+      "destination": "figures/synthetic/scenario_2_inhibition_cal.png",
+      "source_sha256": "64611960de09f11b1f77a712115feffb3a5744a1f1a6ded73926a4ff44547318",
+      "artifact_sha256": "64611960de09f11b1f77a712115feffb3a5744a1f1a6ded73926a4ff44547318",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_2_inhibition_val.csv",
+      "destination": "data/synthetic/scenario_2_inhibition_val.csv",
+      "source_sha256": "a92e95c8a0d55c86939ad55d6a3bcbb38d1dcfe59b25e6a9dd3c79bd680efdc7",
+      "artifact_sha256": "a92e95c8a0d55c86939ad55d6a3bcbb38d1dcfe59b25e6a9dd3c79bd680efdc7",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_2_inhibition_val.png",
+      "destination": "figures/synthetic/scenario_2_inhibition_val.png",
+      "source_sha256": "5db492d7116d00f164b1202465fec5e7b97599beb204987049e57ef02f3072e4",
+      "artifact_sha256": "5db492d7116d00f164b1202465fec5e7b97599beb204987049e57ef02f3072e4",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_3_high_noise_cal.csv",
+      "destination": "data/synthetic/scenario_3_high_noise_cal.csv",
+      "source_sha256": "8146fa2391c0b63cb8c834bd71750a96e86732bf06ec6511ea085d3641c81c66",
+      "artifact_sha256": "8146fa2391c0b63cb8c834bd71750a96e86732bf06ec6511ea085d3641c81c66",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_3_high_noise_cal.png",
+      "destination": "figures/synthetic/scenario_3_high_noise_cal.png",
+      "source_sha256": "9a32a3232f33a16fa3e390ba82a6a07119e739eb43235f0b05968890fc382d37",
+      "artifact_sha256": "9a32a3232f33a16fa3e390ba82a6a07119e739eb43235f0b05968890fc382d37",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_3_high_noise_val.csv",
+      "destination": "data/synthetic/scenario_3_high_noise_val.csv",
+      "source_sha256": "b5e1adc816c8989ff58b2b874b748c66f871439fd8c7d3c77b248324a8dfec5b",
+      "artifact_sha256": "b5e1adc816c8989ff58b2b874b748c66f871439fd8c7d3c77b248324a8dfec5b",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_3_high_noise_val.png",
+      "destination": "figures/synthetic/scenario_3_high_noise_val.png",
+      "source_sha256": "112b7b0e9787b0a8649d57eff5de87a3e1445ac1f58dc4739eefec6659d2c333",
+      "artifact_sha256": "112b7b0e9787b0a8649d57eff5de87a3e1445ac1f58dc4739eefec6659d2c333",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_4_switching_cal.csv",
+      "destination": "data/synthetic/scenario_4_switching_cal.csv",
+      "source_sha256": "44e4ae5221ddbc971e8a981181ecc115920beb236b798406b75fe6a66a8e3d4e",
+      "artifact_sha256": "44e4ae5221ddbc971e8a981181ecc115920beb236b798406b75fe6a66a8e3d4e",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_4_switching_cal.png",
+      "destination": "figures/synthetic/scenario_4_switching_cal.png",
+      "source_sha256": "f9ef88b096b8e36fc9dc54faa42d2dfb5c1604a687f227b252820294038073e4",
+      "artifact_sha256": "f9ef88b096b8e36fc9dc54faa42d2dfb5c1604a687f227b252820294038073e4",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_4_switching_val.csv",
+      "destination": "data/synthetic/scenario_4_switching_val.csv",
+      "source_sha256": "9e2a78524e32f695cb5cd9ec6560a0815c28a184d4b9189663db547d066a774c",
+      "artifact_sha256": "9e2a78524e32f695cb5cd9ec6560a0815c28a184d4b9189663db547d066a774c",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_4_switching_val.png",
+      "destination": "figures/synthetic/scenario_4_switching_val.png",
+      "source_sha256": "4ada0361b00c54def3f80f8c4f7dfa97d0faf77791cbe4b50b5d95ddd0e4427e",
+      "artifact_sha256": "4ada0361b00c54def3f80f8c4f7dfa97d0faf77791cbe4b50b5d95ddd0e4427e",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_5_time_gated_cal.csv",
+      "destination": "data/synthetic/scenario_5_time_gated_cal.csv",
+      "source_sha256": "aed134d73a5ff9e0cb271804940bbb080afe1f3d29704aa652fe7e915e43e490",
+      "artifact_sha256": "aed134d73a5ff9e0cb271804940bbb080afe1f3d29704aa652fe7e915e43e490",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_5_time_gated_cal.png",
+      "destination": "figures/synthetic/scenario_5_time_gated_cal.png",
+      "source_sha256": "8e85c9676ee714e11da0b6afcdd54eb23431cc2450e4d365d1af0da3f971a61e",
+      "artifact_sha256": "8e85c9676ee714e11da0b6afcdd54eb23431cc2450e4d365d1af0da3f971a61e",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_5_time_gated_val.csv",
+      "destination": "data/synthetic/scenario_5_time_gated_val.csv",
+      "source_sha256": "a540f2b9c06e4fe51bdc78033733566f26c624aa8ac98ae6e43d0d81aab54743",
+      "artifact_sha256": "a540f2b9c06e4fe51bdc78033733566f26c624aa8ac98ae6e43d0d81aab54743",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_5_time_gated_val.png",
+      "destination": "figures/synthetic/scenario_5_time_gated_val.png",
+      "source_sha256": "277c3122023279efb3ef102e1ebf2063b1909f35719541ad9c6da06049dafd3a",
+      "artifact_sha256": "277c3122023279efb3ef102e1ebf2063b1909f35719541ad9c6da06049dafd3a",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_6_maintenance_inhibition_cal.csv",
+      "destination": "data/synthetic/scenario_6_maintenance_inhibition_cal.csv",
+      "source_sha256": "c95c4ea864088cb520cea81a51a70cabb1e767eaaac40a346ab8ee4ed106766c",
+      "artifact_sha256": "c95c4ea864088cb520cea81a51a70cabb1e767eaaac40a346ab8ee4ed106766c",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_6_maintenance_inhibition_cal.png",
+      "destination": "figures/synthetic/scenario_6_maintenance_inhibition_cal.png",
+      "source_sha256": "44554c404ec40055153c6f47eb199c823bf88c4c91b71bf91e75d6d0a3649c41",
+      "artifact_sha256": "44554c404ec40055153c6f47eb199c823bf88c4c91b71bf91e75d6d0a3649c41",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_6_maintenance_inhibition_val.csv",
+      "destination": "data/synthetic/scenario_6_maintenance_inhibition_val.csv",
+      "source_sha256": "6aae0724ef72b5aab747d0a7111895af80c438962bed323025eb29bf433092c7",
+      "artifact_sha256": "6aae0724ef72b5aab747d0a7111895af80c438962bed323025eb29bf433092c7",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_6_maintenance_inhibition_val.png",
+      "destination": "figures/synthetic/scenario_6_maintenance_inhibition_val.png",
+      "source_sha256": "46bf0f843b41e369a7f5ba18d987969ca9548ef4c95140a26a12ae6f9599473f",
+      "artifact_sha256": "46bf0f843b41e369a7f5ba18d987969ca9548ef4c95140a26a12ae6f9599473f",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_7_switching_inhibition_cal.csv",
+      "destination": "data/synthetic/scenario_7_switching_inhibition_cal.csv",
+      "source_sha256": "6dda795eb5ce1861dce5df56687e84ed68bc4c03cee31a53c7b29074068afefc",
+      "artifact_sha256": "6dda795eb5ce1861dce5df56687e84ed68bc4c03cee31a53c7b29074068afefc",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_7_switching_inhibition_cal.png",
+      "destination": "figures/synthetic/scenario_7_switching_inhibition_cal.png",
+      "source_sha256": "d107857dd2fb0b88caaab4d9734bf812e901b54693d34a776452be3804bd58a8",
+      "artifact_sha256": "d107857dd2fb0b88caaab4d9734bf812e901b54693d34a776452be3804bd58a8",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_7_switching_inhibition_val.csv",
+      "destination": "data/synthetic/scenario_7_switching_inhibition_val.csv",
+      "source_sha256": "3abac4855f9dfd2a25ea691e444c0e81604720cb01daa2565a25d6a889a764b4",
+      "artifact_sha256": "3abac4855f9dfd2a25ea691e444c0e81604720cb01daa2565a25d6a889a764b4",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_7_switching_inhibition_val.png",
+      "destination": "figures/synthetic/scenario_7_switching_inhibition_val.png",
+      "source_sha256": "c607ac093be52b26104d98c4d8582a3fd3c1c72a39785395fb6dee92b8d3bca8",
+      "artifact_sha256": "c607ac093be52b26104d98c4d8582a3fd3c1c72a39785395fb6dee92b8d3bca8",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_8_lag_adaptation_cal.csv",
+      "destination": "data/synthetic/scenario_8_lag_adaptation_cal.csv",
+      "source_sha256": "97538743edc7ad31735118fc679f0d68c21d6596bb217222401fe06359de008c",
+      "artifact_sha256": "97538743edc7ad31735118fc679f0d68c21d6596bb217222401fe06359de008c",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_8_lag_adaptation_cal.png",
+      "destination": "figures/synthetic/scenario_8_lag_adaptation_cal.png",
+      "source_sha256": "5c99ec25242f932c3c4762d4113ec16a78e223316b30b5b42e1827d0511c4b27",
+      "artifact_sha256": "5c99ec25242f932c3c4762d4113ec16a78e223316b30b5b42e1827d0511c4b27",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_8_lag_adaptation_val.csv",
+      "destination": "data/synthetic/scenario_8_lag_adaptation_val.csv",
+      "source_sha256": "4de24f904cfcb15b590131c32bb7f7b5e7ce2c51e615ddc30d1992474cd4404d",
+      "artifact_sha256": "4de24f904cfcb15b590131c32bb7f7b5e7ce2c51e615ddc30d1992474cd4404d",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_8_lag_adaptation_val.png",
+      "destination": "figures/synthetic/scenario_8_lag_adaptation_val.png",
+      "source_sha256": "f44318069efd220096b1a5536ea1ac083b903c5c6eb5b5f67d1e90241eaa4fde",
+      "artifact_sha256": "f44318069efd220096b1a5536ea1ac083b903c5c6eb5b5f67d1e90241eaa4fde",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_9_yield_drift_cal.csv",
+      "destination": "data/synthetic/scenario_9_yield_drift_cal.csv",
+      "source_sha256": "943b74c47f69f153de031cb86c8f04570cfa36b0758be9a3ece6e8aa8c906f73",
+      "artifact_sha256": "943b74c47f69f153de031cb86c8f04570cfa36b0758be9a3ece6e8aa8c906f73",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_9_yield_drift_cal.png",
+      "destination": "figures/synthetic/scenario_9_yield_drift_cal.png",
+      "source_sha256": "8b378c516beb74c56702b0baa76bec5b48e73f7eb72988f0a4d3d746a1fb6ec2",
+      "artifact_sha256": "8b378c516beb74c56702b0baa76bec5b48e73f7eb72988f0a4d3d746a1fb6ec2",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_9_yield_drift_val.csv",
+      "destination": "data/synthetic/scenario_9_yield_drift_val.csv",
+      "source_sha256": "8700fc8c721a21e6eb60e818e92d64cb26cbea30463556619e1f6a25fd1cde94",
+      "artifact_sha256": "8700fc8c721a21e6eb60e818e92d64cb26cbea30463556619e1f6a25fd1cde94",
+      "encoding": "identity"
+    },
+    {
+      "source": "synthetic_data/scenario_9_yield_drift_val.png",
+      "destination": "figures/synthetic/scenario_9_yield_drift_val.png",
+      "source_sha256": "2b9e2c7f9adfd4ba1dbaf1023a7c5dfb5a8e79711c5ce5209c50b211bd348307",
+      "artifact_sha256": "2b9e2c7f9adfd4ba1dbaf1023a7c5dfb5a8e79711c5ce5209c50b211bd348307",
+      "encoding": "identity"
+    },
+    {
+      "source": "representative_upload_timeseries.csv",
+      "destination": "data/synthetic/representative_upload_timeseries.csv",
+      "source_sha256": "d9fb521807ec4aff6ef5f4224c63f32446b202e4cd48adcae67dfb352e0264b7",
+      "artifact_sha256": "d9fb521807ec4aff6ef5f4224c63f32446b202e4cd48adcae67dfb352e0264b7",
+      "encoding": "identity"
+    },
+    {
+      "source": "representative_upload_timeseries.manifest.csv",
+      "destination": "data/synthetic/representative_upload_timeseries.manifest.csv",
+      "source_sha256": "b9eaff07d7abf755d756421425eceda4c1805321f0435c3a62ba582454e6731a",
+      "artifact_sha256": "b9eaff07d7abf755d756421425eceda4c1805321f0435c3a62ba582454e6731a",
+      "encoding": "identity"
+    },
+    {
+      "source": "sample_upload_timeseries.csv",
+      "destination": "data/synthetic/sample_upload_timeseries.csv",
+      "source_sha256": "d67e411eed56a43613b50f103e4acdc58f09a6a486414499c4f3962726e98fc8",
+      "artifact_sha256": "d67e411eed56a43613b50f103e4acdc58f09a6a486414499c4f3962726e98fc8",
+      "encoding": "identity"
+    },
+    {
+      "source": "report_evidence/hpc_gated_override_v1/analysis/figure_5_2_projected_confusion_matrix.png",
+      "destination": "figures/confusion/earlier_report/figure_5_2_projected_confusion_matrix.png",
+      "source_sha256": "d93e449e28e78b285bfbdfc539750a1210c6b3dfe6e536a714505a6a70f23966",
+      "artifact_sha256": "d93e449e28e78b285bfbdfc539750a1210c6b3dfe6e536a714505a6a70f23966",
+      "encoding": "identity"
+    },
+    {
+      "source": "report_evidence/hpc_gated_override_v1/analysis/figure_5_2_projected_confusion_matrix_normalized.png",
+      "destination": "figures/confusion/earlier_report/figure_5_2_projected_confusion_matrix_normalized.png",
+      "source_sha256": "7445fce658dfd6663dbce94c4647d7563ca995654eea8906c9e393d076e980b0",
+      "artifact_sha256": "7445fce658dfd6663dbce94c4647d7563ca995654eea8906c9e393d076e980b0",
+      "encoding": "identity"
+    },
+    {
+      "source": "report_evidence/hpc_gated_override_v1/analysis/projected_fittable_confusion_matrix_counts.csv",
+      "destination": "figures/confusion/earlier_report/projected_fittable_confusion_matrix_counts.csv",
+      "source_sha256": "0108e245e226d5f371f7debfa54e23ae72f73476d1ae6f36f618714e86f84075",
+      "artifact_sha256": "0108e245e226d5f371f7debfa54e23ae72f73476d1ae6f36f618714e86f84075",
+      "encoding": "identity"
+    },
+    {
+      "source": "report_evidence/hpc_gated_override_v1/analysis/projected_fittable_confusion_matrix_row_percent.csv",
+      "destination": "figures/confusion/earlier_report/projected_fittable_confusion_matrix_row_percent.csv",
+      "source_sha256": "b5f211e65749b1e73b0b537def28f8a0d98f30fd0666186fdefa3040d0261dbe",
+      "artifact_sha256": "b5f211e65749b1e73b0b537def28f8a0d98f30fd0666186fdefa3040d0261dbe",
+      "encoding": "identity"
+    },
+    {
+      "source": "neuro_symbolic_bioprocess/ns_pipeline_outputs/report_500/results.json",
+      "destination": "results/replay/earlier_report.json.gz",
+      "source_sha256": "6a9556d3b655d5197c1003849115f003fcba686f200030c559888fa62494d0c2",
+      "artifact_sha256": "ecae0233c35f327603044f30251a3b0b5141bbe15224abe6befa52d96960de98",
+      "encoding": "gzip"
+    },
+    {
+      "source": "neuro_symbolic_bioprocess/ns_pipeline_outputs/stage_e_archives/job36212117_seed42/results/standard_results.json",
+      "destination": "results/replay/stage_e_standard.json.gz",
+      "source_sha256": "f4382922ba2a6b58a73e1c6407710f7bc9898af44054d819e2ba8fd935552166",
+      "artifact_sha256": "9d449ad488388fd6fde3d6b25bd38247e6efd962c676ce41a15874d32f893666",
+      "encoding": "gzip"
+    },
+    {
+      "source": "neuro_symbolic_bioprocess/ns_pipeline_outputs/stage_e_archives/job36212117_seed42/results/expanded_ode_results.json",
+      "destination": "results/replay/stage_e_expanded.json.gz",
+      "source_sha256": "8edcec866c2ce4da7d82a81cc4210770255008a84d9400944003a4d47980ec22",
+      "artifact_sha256": "fde830e721b8ea6fa632c1e353f94a7940f1a69bb8ab24a06f1de878bf93372c",
+      "encoding": "gzip"
+    }
+  ],
+  "synthetic_samples": [
+    {
+      "name": "scenario_0_baseline_cal",
+      "csv": "data/synthetic/scenario_0_baseline_cal.csv",
+      "png": "figures/synthetic/scenario_0_baseline_cal.png"
+    },
+    {
+      "name": "scenario_0_baseline_val",
+      "csv": "data/synthetic/scenario_0_baseline_val.csv",
+      "png": "figures/synthetic/scenario_0_baseline_val.png"
+    },
+    {
+      "name": "scenario_10_product_inhibition_cal",
+      "csv": "data/synthetic/scenario_10_product_inhibition_cal.csv",
+      "png": "figures/synthetic/scenario_10_product_inhibition_cal.png"
+    },
+    {
+      "name": "scenario_10_product_inhibition_val",
+      "csv": "data/synthetic/scenario_10_product_inhibition_val.csv",
+      "png": "figures/synthetic/scenario_10_product_inhibition_val.png"
+    },
+    {
+      "name": "scenario_11_oxygen_limitation_cal",
+      "csv": "data/synthetic/scenario_11_oxygen_limitation_cal.csv",
+      "png": "figures/synthetic/scenario_11_oxygen_limitation_cal.png"
+    },
+    {
+      "name": "scenario_11_oxygen_limitation_val",
+      "csv": "data/synthetic/scenario_11_oxygen_limitation_val.csv",
+      "png": "figures/synthetic/scenario_11_oxygen_limitation_val.png"
+    },
+    {
+      "name": "scenario_12_death_decay_cal",
+      "csv": "data/synthetic/scenario_12_death_decay_cal.csv",
+      "png": "figures/synthetic/scenario_12_death_decay_cal.png"
+    },
+    {
+      "name": "scenario_12_death_decay_val",
+      "csv": "data/synthetic/scenario_12_death_decay_val.csv",
+      "png": "figures/synthetic/scenario_12_death_decay_val.png"
+    },
+    {
+      "name": "scenario_13_switching_maintenance_cal",
+      "csv": "data/synthetic/scenario_13_switching_maintenance_cal.csv",
+      "png": "figures/synthetic/scenario_13_switching_maintenance_cal.png"
+    },
+    {
+      "name": "scenario_13_switching_maintenance_val",
+      "csv": "data/synthetic/scenario_13_switching_maintenance_val.csv",
+      "png": "figures/synthetic/scenario_13_switching_maintenance_val.png"
+    },
+    {
+      "name": "scenario_1_maintenance_cal",
+      "csv": "data/synthetic/scenario_1_maintenance_cal.csv",
+      "png": "figures/synthetic/scenario_1_maintenance_cal.png"
+    },
+    {
+      "name": "scenario_1_maintenance_val",
+      "csv": "data/synthetic/scenario_1_maintenance_val.csv",
+      "png": "figures/synthetic/scenario_1_maintenance_val.png"
+    },
+    {
+      "name": "scenario_2_inhibition_cal",
+      "csv": "data/synthetic/scenario_2_inhibition_cal.csv",
+      "png": "figures/synthetic/scenario_2_inhibition_cal.png"
+    },
+    {
+      "name": "scenario_2_inhibition_val",
+      "csv": "data/synthetic/scenario_2_inhibition_val.csv",
+      "png": "figures/synthetic/scenario_2_inhibition_val.png"
+    },
+    {
+      "name": "scenario_3_high_noise_cal",
+      "csv": "data/synthetic/scenario_3_high_noise_cal.csv",
+      "png": "figures/synthetic/scenario_3_high_noise_cal.png"
+    },
+    {
+      "name": "scenario_3_high_noise_val",
+      "csv": "data/synthetic/scenario_3_high_noise_val.csv",
+      "png": "figures/synthetic/scenario_3_high_noise_val.png"
+    },
+    {
+      "name": "scenario_4_switching_cal",
+      "csv": "data/synthetic/scenario_4_switching_cal.csv",
+      "png": "figures/synthetic/scenario_4_switching_cal.png"
+    },
+    {
+      "name": "scenario_4_switching_val",
+      "csv": "data/synthetic/scenario_4_switching_val.csv",
+      "png": "figures/synthetic/scenario_4_switching_val.png"
+    },
+    {
+      "name": "scenario_5_time_gated_cal",
+      "csv": "data/synthetic/scenario_5_time_gated_cal.csv",
+      "png": "figures/synthetic/scenario_5_time_gated_cal.png"
+    },
+    {
+      "name": "scenario_5_time_gated_val",
+      "csv": "data/synthetic/scenario_5_time_gated_val.csv",
+      "png": "figures/synthetic/scenario_5_time_gated_val.png"
+    },
+    {
+      "name": "scenario_6_maintenance_inhibition_cal",
+      "csv": "data/synthetic/scenario_6_maintenance_inhibition_cal.csv",
+      "png": "figures/synthetic/scenario_6_maintenance_inhibition_cal.png"
+    },
+    {
+      "name": "scenario_6_maintenance_inhibition_val",
+      "csv": "data/synthetic/scenario_6_maintenance_inhibition_val.csv",
+      "png": "figures/synthetic/scenario_6_maintenance_inhibition_val.png"
+    },
+    {
+      "name": "scenario_7_switching_inhibition_cal",
+      "csv": "data/synthetic/scenario_7_switching_inhibition_cal.csv",
+      "png": "figures/synthetic/scenario_7_switching_inhibition_cal.png"
+    },
+    {
+      "name": "scenario_7_switching_inhibition_val",
+      "csv": "data/synthetic/scenario_7_switching_inhibition_val.csv",
+      "png": "figures/synthetic/scenario_7_switching_inhibition_val.png"
+    },
+    {
+      "name": "scenario_8_lag_adaptation_cal",
+      "csv": "data/synthetic/scenario_8_lag_adaptation_cal.csv",
+      "png": "figures/synthetic/scenario_8_lag_adaptation_cal.png"
+    },
+    {
+      "name": "scenario_8_lag_adaptation_val",
+      "csv": "data/synthetic/scenario_8_lag_adaptation_val.csv",
+      "png": "figures/synthetic/scenario_8_lag_adaptation_val.png"
+    },
+    {
+      "name": "scenario_9_yield_drift_cal",
+      "csv": "data/synthetic/scenario_9_yield_drift_cal.csv",
+      "png": "figures/synthetic/scenario_9_yield_drift_cal.png"
+    },
+    {
+      "name": "scenario_9_yield_drift_val",
+      "csv": "data/synthetic/scenario_9_yield_drift_val.csv",
+      "png": "figures/synthetic/scenario_9_yield_drift_val.png"
+    }
+  ],
+  "frontend_origin": {
+    "path": "scripts/31_streamlit_inference_app.py",
+    "sha256": "d0e1bc4515e4a66daf0eb905a908e99a8de2164528e01d5610b65ed7acb0c24a"
+  },
+  "notes": [
+    "Only explicitly selected synthetic CSVs, figures, and saved synthetic result JSONs were read.",
+    "Earlier report matrix belongs to the provisional 89.8% artifact, not Stage E.",
+    "Scenario examples and representative upload samples are separate presentation assets; no case-level linkage to frozen results is inferred."
+  ]
+}

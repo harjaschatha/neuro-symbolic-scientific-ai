@@ -1,0 +1,3 @@
+# Standalone replay frontend; no PyTorch, vLLM, or research model weights required.
+streamlit>=1.59,<2
+pandas>=2.0,<3

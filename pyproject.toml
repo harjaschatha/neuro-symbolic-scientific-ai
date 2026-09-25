@@ -21,6 +21,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+showcase = ["streamlit>=1.59,<2", "pandas>=2.0,<3"]
 dev = [
     "pytest>=7.0.0",
 ]

@@ -1,0 +1,17 @@
+{
+  "cases_sha256": "917d6662c367152bdbb55ce61377685567a8a4059acb98a2d715dc8385d390d3",
+  "artifacts": {
+    "figures/confusion/earlier_report/exact_counts.csv": "cd677a3c72045ac02554dbcb1f30d7744c943a593f59f4d909eff3d841a77676",
+    "figures/confusion/earlier_report/exact_counts.png": "d873f6ce71bcf9fb7217e8b78e9d4f02c1747ede4d01e66d3d1214b46a75afe0",
+    "figures/confusion/stage_e_standard/exact_counts.csv": "699494f2438111082c0ca09bc5b68c707c7e65c55b1877c87354a3aad2fac51d",
+    "figures/confusion/stage_e_standard/exact_counts.png": "1f93be49050d053f77d39dc2ee398c0b1bd2ec47cb650a0a00feffbeebd095cd",
+    "figures/confusion/stage_e_standard/family_counts.csv": "f6baa178f82c7fd7b719c8c8491b1c0f3cf54de6e1293403902889c97bb96a77",
+    "figures/confusion/stage_e_standard/family_counts.png": "efa470d31c82ea054e96e58b31995f6e114a038722e261334d90da2db25db55f",
+    "figures/confusion/stage_e_expanded/exact_counts.csv": "46167eb992995d1750bd1ad2fcda2401cc91924954a851242c80ad512a583bef",
+    "figures/confusion/stage_e_expanded/exact_counts.png": "d544495e5c1db4cff14cc30828be2a01cbd952ebfdbd28c8c9212a9faaf87db4",
+    "figures/confusion/stage_e_expanded/family_counts.csv": "8109749fb2c860fe9b469b2a430210d62f931cc789232e781ffe9f6b7513825c",
+    "figures/confusion/stage_e_expanded/family_counts.png": "15c8fdf3690bbeac28cf96fe2c69984efc686827c7363b6a44feeaa8d6f34cf3"
+  },
+  "orientation": "Rows: ground truth; columns: selected mechanism. Counts, not percentages.",
+  "original_report_check": "Copied projected counts equal recomputation from earlier_report: diagonal 449, total 500."
+}

@@ -5,6 +5,41 @@ artifacts and includes a separate illustrative curve-fitting implementation.
 The reported research evaluates synthetic microbial-growth mechanisms; the
 implementation in `src/` does not reproduce that research pipeline.
 
+## Interactive research showcase
+
+The [Streamlit frontend](frontend/README.md) adapts the original research
+workbench, with saved case diagnostics, hypotheses, fitted candidates, guard
+checks, and downloadable reports. It also includes a synthetic-data gallery and
+confusion-matrix explorer.
+
+```bash
+python -m pip install -r requirements-showcase.txt
+python -m streamlit run app.py
+```
+
+It runs from bundled synthetic data and frozen result payloads, without an LLM
+server or the original project directory. Uploads preview CSV measurements;
+research results are replayed from saved files.
+
+### Synthetic data and figures
+
+The repository includes [28 original scenario CSV/PNG pairs](data/README.md),
+covering 14 calibration/validation configurations, plus the original frontend's
+upload samples. These presentation examples are separate from the frozen
+500-case evaluation cohorts.
+
+![Original synthetic switching scenario](figures/synthetic/scenario_4_switching_cal.png)
+
+The [confusion-matrix collection](figures/README.md) includes the original report
+PNGs and their underlying CSVs, plus new exact-label and family matrices
+recalculated from the frozen Stage E cases.
+
+![Stage E expanded library: exact biological confusion matrix](figures/confusion/stage_e_expanded/exact_counts.png)
+
+The original report's projected matrix remains separately labeled as the
+provisional **89.8%** result. No experimental Excel file or its data was imported.
+All imported file identities are recorded in [the asset manifest](data/showcase_manifest.json).
+
 ## Verified research results
 
 The later Stage E development study contains **500 matched cases per arm**.
@@ -59,6 +94,8 @@ Verify the bundled evidence using only the Python standard library:
 
 ```bash
 python scripts/export_verified_results.py --check
+python scripts/verify_showcase_assets.py
+python scripts/render_confusion_matrices.py --check
 ```
 
 Recheck it against the local source files:

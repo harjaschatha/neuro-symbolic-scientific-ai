@@ -1,0 +1,9 @@
+True mechanism / selected mechanism,baseline,death_decay,inhibition,lag_adaptation,maintenance,switching,time_gating,yield_drift
+baseline,39,0,0,0,1,4,0,1
+death_decay,40,0,0,0,0,0,0,0
+inhibition,14,0,142,0,0,1,0,1
+lag_adaptation,32,0,0,0,0,2,0,0
+maintenance,14,0,0,0,64,0,0,0
+switching,3,0,1,0,0,60,0,0
+time_gating,10,0,30,0,1,0,0,0
+yield_drift,5,0,0,0,5,0,0,30
